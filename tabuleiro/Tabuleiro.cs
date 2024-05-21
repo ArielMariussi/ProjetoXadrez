@@ -1,4 +1,4 @@
-﻿using System.Reflection.Metadata.Ecma335;
+﻿using System;
 
 namespace tabuleiro
 {
@@ -29,7 +29,7 @@ namespace tabuleiro
 
         }
 
-        public bool existePeca(Posicao pos)
+        public bool existePeca(Posicao pos) 
         {
             validarPosicao(pos);
             return peca(pos) != null;
